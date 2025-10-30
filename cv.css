@@ -1,0 +1,134 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 16px rgba(0,0,0,0.12);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .header-bg {
+      background: #3a7d7c;
+      padding: 32px 24px 80px 24px;
+      position: relative;
+      text-align: left;
+    }
+    .profile-pic {
+      position: absolute;
+      top: 40px;
+      right: 32px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .profile-pic img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .header-bg h2 {
+      color: #fff;
+      font-size: 2em;
+      margin: 0 0 8px 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .header-bg p {
+      color: #e0f7f6;
+      margin: 0 0 8px 0;
+      font-size: 1.1em;
+      font-weight: 500;
+    }
+    .header-bg .desc {
+      color: #e0f7f6;
+      font-size: 0.95em;
+      margin-top: 12px;
+      margin-bottom: 0;
+      max-width: 350px;
+    }
+    .main-content {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+      background: #fff;
+      padding: 0;
+    }
+    .left, .right {
+      flex: 1;
+      padding: 32px 24px;
+    }
+    .left {
+      background: #eaf7f6;
+      border-right: 1px solid #d0e7e6;
+    }
+    .section-title {
+      color: #3a7d7c;
+      font-size: 1.1em;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      margin-top: 0;
+    }
+    .left ul, .right ul {
+      padding-left: 18px;
+      margin: 0 0 16px 0;
+    }
+    .left li, .right li {
+      margin-bottom: 10px;
+      font-size: 0.98em;
+    }
+    .contact {
+      margin-top: 32px;
+    }
+    .contact p {
+      margin: 8px 0;
+      font-size: 0.98em;
+      color: #3a7d7c;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .right section {
+      margin-bottom: 32px;
+    }
+    .skills-bar {
+      background: #eaf7f6;
+      border-radius: 6px;
+      height: 12px;
+      margin: 6px 0 16px 0;
+      overflow: hidden;
+      width: 100%;
+      max-width: 220px;
+    }
+    .skills-fill {
+      height: 100%;
+      border-radius: 6px;
+      background: #3a7d7c;
+    }
+    @media (max-width: 700px) {
+      .main-content {
+        flex-direction: column;
+      }
+      .left, .right {
+        border-right: none;
+        padding: 24px 12px;
+      }
+      .profile-pic {
+        position: static;
+        margin: 0 auto 16px auto;
+      }
+    }
